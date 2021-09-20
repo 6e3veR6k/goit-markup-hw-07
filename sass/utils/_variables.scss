@@ -3,6 +3,7 @@
 
   $font-main-color: #757575;
   $font-light-color: var(--white-color);
+  $font-dark-color: $black-color;
   $font-accent-color: #2196f3;
   $font-accent-secondary-color: #212121;
 
@@ -16,7 +17,7 @@
   $main-font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   $accent-font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  $main-footer-color: $black-color;
+
   $main-font-size: 1.6rem;
 
   $btn-border-radius: calc($main-font-size / 4);

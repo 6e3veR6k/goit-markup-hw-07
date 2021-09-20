@@ -1,28 +1,67 @@
 .header {
 }
-.container {
+
+.header__container {
+    @extend %container;
+    display: flex;
 }
+
 .header__nav {
+    display: flex;
+    align-items: center;
 }
-.webstudio-logo {
-}
-.webstudio-logo__prefix {
-}
+
 .nav {
+    @extend %list;
+    display: flex;
 }
-.nav__item {
+
+.nav__item:not(:last-child) {
+    margin-right: 50;
 }
+
 .nav__link {
+    @extend %link;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
 }
+
 .nav__link--current {
 }
+
 .header__nav__link {
 }
+
 .contacts {
+    @extend %list;
+    display: flex;
+    margin-left: auto;
 }
+
 .contacts__item {
 }
+
 .contacts__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 1.4rem;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+
+    color: $font-accent-color;
 }
+
 .contacts__icon {
+    @extend %svg;
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: $font-main-color;
 }
