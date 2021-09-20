@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACD,WAAW,EDcM,QAAQ,EAAE,UAAU,EAAE,MAAM,EAAE,MAAM,EAAE,OAAO,EAAE,UAAU;ECb1E,SAAS,EAAE,KAAK;CACnB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EDaQ,MAAM;ECZvB,KAAK,EDJa,OAAO;ECKzB,QAAQ,EAAE,QAAQ;CACnB;;AAED,AAAA,GAAG;AACH,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;AChBD,AAAA,gBAAgB,AAAA,IAAK,CAAA,MAAM,CAAC,IAAK,CAAA,OAAO,EAAE;EACxC,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,WAAW;EACtB,IAAI,EAAE,aAAa;EACnB,QAAQ,EAAE,MAAM;CACjB;;ACXD,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,YAAY,EAAE,MAAM;EACpB,aAAa,EAAE,MAAM;CACtB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_common.scss",
+        "../sass/components/_visually-hidden.scss",
+        "../sass/components/_container.scss",
+        "../sass/components/_header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

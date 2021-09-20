@@ -1,0 +1,17 @@
+html {
+    font-family: $main-font-family;
+    font-size: 62.5%;
+}
+
+body {
+  font-size: $main-font-size;
+  color: $font-main-color;
+  position: relative;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
