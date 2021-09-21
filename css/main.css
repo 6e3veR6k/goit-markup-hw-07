@@ -75,7 +75,17 @@ img {
 }
 
 .webstudio-logo__left-margin {
-  margin-right: 17.4812%;
+  margin-right: 9.3rem;
+}
+
+.header {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  border: 0.1rem solid #ececec;
 }
 
 .header__container {
@@ -99,8 +109,12 @@ img {
   display: flex;
 }
 
+.nav__item {
+  color: #212121;
+}
+
 .nav__item:not(:last-child) {
-  margin-right: 50;
+  margin-right: 5rem;
 }
 
 .nav__link {
@@ -115,6 +129,10 @@ img {
   margin-left: auto;
 }
 
+.contacts__item + .contacts__item {
+  margin-left: 3rem;
+}
+
 .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,18 +142,26 @@ img {
           align-items: center;
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
-  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 1.1428;
-  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
   color: #2196f3;
 }
 
 .contacts__icon {
+  margin-right: 1rem;
   width: 1.6rem;
   height: 1.6rem;
   fill: #757575;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link:hover > .contacts__icon,
+.contacts__link:focus > .contacts__icon {
+  fill: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
