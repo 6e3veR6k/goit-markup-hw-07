@@ -1,0 +1,52 @@
+.page-section {
+    line-height: 1.15;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    text-align: center;
+    background-color: $background-dark-color;
+
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-our-compay.jpg);
+    background-repeat: no-repeat;
+    background-size: 160rem;
+    background-position: center;
+
+    .container {
+        @extend %container;
+    }
+
+    &__hero-title {
+            -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    --white-color: #fff;
+    --black-color: #000;
+    --font-main-color: #757575;
+    --font-light-color: var(--white-color);
+    --font-accent-color: #2196f3;
+    --font-accent-secodary-color: #212121;
+    --background-dark-color: #2f303a;
+    --foreground-icon-color: #afb1b8;
+    --background-light-color: #f5f4fa;
+    --header-border-bottom: #ececec;
+    --main-font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --accent-font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --main-footer-color: var(--black-color);
+    --main-font-size: 16px;
+    --btn-border-radius: calc(var(--main-font-size) / 4);
+    font-family: var(--main-font-family);
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+    --title-font-size: calc(var(--main-font-size) * 2.75);
+    font-size: var(--title-font-size);
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: calc(var(--title-font-size) * 0.06);
+    text-transform: uppercase;
+    color: var(--font-light-color);
+    }
+}
