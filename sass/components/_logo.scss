@@ -7,11 +7,12 @@
     line-height: 1.192;
     letter-spacing: 0.03rem;
     color: $font-dark-color;
-}
-.webstudio-logo__prefix {
-    color: $font-accent-color;
-}
 
-.webstudio-logo__left-margin {
-    margin-right: 9.3rem;
+    &__prefix {
+        color: $font-accent-color;
+    }
+
+    &__left-margin {
+        margin-right: 9.3rem;
+    }
 }
