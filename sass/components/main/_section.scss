@@ -1,16 +1,32 @@
 .page-section {
     font-family: $main-font-family;
     line-height: 1.15;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
     text-align: center;
-    background-color: $background-dark-color;
+    color: $font-accent-secondary-color;
 
-    background-image:   linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                        url(../images/hero-our-compay.jpg);
-    background-repeat: no-repeat;
-    background-size: 160rem;
-    background-position: center;
+    &--peculiarities {
+        padding-top: 8.5rem;
+    }
+
+
+    &__hero {
+        background-image:   linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url(../images/hero-our-compay.jpg);
+        background-repeat: no-repeat;
+        background-size: 160rem;
+        background-position: center;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+    }
+
+    &--dark {
+        background-color: $background-dark-color;
+        color: $font-light-color;
+    }
+
+    &--light {
+        background-color: $background-light-color;
+    }
 
     .container {
         @extend %container;
@@ -27,6 +43,6 @@
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: $font-light-color;
+
     }
 }
