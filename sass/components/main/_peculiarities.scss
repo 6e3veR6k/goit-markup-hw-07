@@ -1,15 +1,17 @@
 .peculiarities {
     @extend %list;
-    line-height: 1.15;
-    font-size: 1.4rem;
-    letter-spacing: 0.03em;
-
-    margin-left: -3rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
 
     &__item {
         max-width: 27rem;
         margin-right: 1.5rem;
         margin-left: 1.5rem;
+
+        line-height: 1.15;
+        text-align: left;
+        font-size: 1.4rem;
+        letter-spacing: 0.03em;
     }
 
 
@@ -31,20 +33,21 @@
     }
 
     &__title {
+        margin-top: 0;
+        margin-bottom: 1rem;
         font-size: 1.4rem;
-
-
-    letter-spacing: calc(var(--list-font-size) * 0.03);
-
-    margin-top: 0;
-    margin-bottom: 10px;
-
-    line-height: 1.14286;
-    text-transform: uppercase;
-    font-weight: 800;
+        line-height: 1.14286;
+        text-transform: uppercase;
+        font-weight: 800;
     }
 
     &__description {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $font-main-color;
     }
 
 }
