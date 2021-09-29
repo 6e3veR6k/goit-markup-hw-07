@@ -1,0 +1,129 @@
+%block-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: $background-dark-color;
+    font-family: $main-font-family;
+    color: $font-light-color;
+
+
+    &-block {
+
+
+        &--address {
+            min-width: 23.1rem;
+        }
+
+        &--socials {
+            min-width: 20.6rem;
+        }
+
+        &--mr70 {
+            margin-right: 7rem;
+        }
+
+        &--larger {
+            margin-left: auto;
+            width: 100%;
+        }
+
+    }
+}
+
+.footer-address {
+    font-style: inherit;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &__text {
+        display: inline-block;
+        margin-bottom: 0.9rem;
+    }
+}
+
+.studio-socials {
+    @extend %list;
+    margin-top: -0.5rem;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+
+    &__title {
+        @extend %block-title;
+    }
+
+    &__item {
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+}
+
+.mail-form {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-input {
+    &__label {
+        min-width: 62.807%;
+        margin-right: 1.2rem;
+
+        &-text {
+            @extend %block-title;
+            display: block;
+        }
+    }
+
+    &__inner {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 16px;
+
+        line-height: 1.15;
+        color: $background-light-color;
+        background: transparent;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+        border-radius: 4px;
+        border: 0.1rem solid rgba(255, 255, 255, 0.3);
+        transition: border cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus-within {
+            border-color: $font-accent-color;
+            outline: 1px solid $font-accent-color;
+        }
+
+        &::placeholder {
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.03em;
+        }
+
+        &:not(:placeholder-shown) {
+            border: 1px solid $font-accent-color;
+        }
+    }
+}
+
+.button {
+}
+.submit-text {
+}
+.icon__button {
+}
+

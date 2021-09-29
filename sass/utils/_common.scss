@@ -54,3 +54,11 @@ img {
   text-transform: none;
   background: transparent;
 }
+
+.container {
+  @extend %container;
+
+  &--flex {
+    display: flex;
+  }
+}

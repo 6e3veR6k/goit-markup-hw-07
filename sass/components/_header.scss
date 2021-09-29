@@ -5,13 +5,9 @@
     font-size: 1.4rem;
     line-height: 1.1428;
     letter-spacing: 0.02em;
+    color: $font-dark-color;
 
-    border: 0.1rem solid $header-border-bottom;
-
-    &__container {
-        @extend %container;
-        display: flex;
-    }
+    border-bottom: 0.1rem solid $header-border-bottom;
 }
 
 
@@ -80,20 +76,36 @@
 .contacts {
     @extend %list;
     display: flex;
+    align-items: center;
     margin-left: auto;
+    color: $font-main-color;
 
-    &__item + &__item {
-        margin-left: 3rem;
+    &__item--header {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
     }
 
+    &__item--footer {
+        &:not(:last-child) {
+            margin-bottom: 0.9rem;
+        }
+    }
+
+
+
     &__link {
-        @extend %link;
-        display: inline-flex;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
         align-items: center;
-        padding-top: 3.2rem;
-        padding-bottom: 3.2rem;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &--transparent {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
 
         &:hover,
         &:focus {
