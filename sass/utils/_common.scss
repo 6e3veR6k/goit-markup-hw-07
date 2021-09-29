@@ -1,6 +1,6 @@
 html {
-    font-family: $main-font-family;
-    font-size: 62.5%;
+  font-family: $main-font-family;
+  font-size: 62.5%;
 }
 
 body {
@@ -16,7 +16,6 @@ img {
 }
 
 .is-hidden {
-  // todo: replace from lesson 6
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -63,74 +62,73 @@ img {
 
 .container {
   @extend %container;
+}
 
-  &--flex {
-    display: flex;
-  }
+.container--flex {
+  display: flex;
 }
 
 .social-link {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 4.4rem;
-    height: 4.4rem;
-    border-radius: 50%;
-    overflow: hidden;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  overflow: hidden;
 
-    &--dark {
-      background-color: rgba(255, 255, 255, 0.1)
-    }
+  &:hover::before,
+  &:focus::before {
+    opacity: 1;
+  }
 
-    &--dark::before,
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
+  &:hover > .icon,
+  &:focus > .icon {
+    fill: $font-light-color;
+  }
 
-        background-color:$font-accent-color;
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  &:hover > .icon,
+  &:focus > .icon {
+    fill: $font-light-color;
+  }
+}
 
-    .icon {
-        display: block;
-        width: 2rem;
-        height: 2rem;
-        align-content: center;
+.social-link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-        z-index: 1;
+.social-link--dark::before,
+.social-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 
-        &--light {
-            fill: $foreground-icon-color;
-        }
+  background-color: $font-accent-color;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        &--dark {
-            fill: $font-light-color;
-        }
+.icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  align-content: center;
 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  z-index: 1;
 
-    &:hover::before,
-    &:focus::before {
-        opacity: 1;
-    }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    &:hover > .icon,
-    &:focus > .icon {
-        fill: $font-light-color;
-    }
+.icon--light {
+  fill: $foreground-icon-color;
+}
 
-
-    &:hover > .icon,
-    &:focus > .icon {
-        fill: $font-light-color;
-    }
+.icon--dark {
+  fill: $font-light-color;
 }
