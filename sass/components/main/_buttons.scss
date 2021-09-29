@@ -1,7 +1,8 @@
 .button {
     @extend %button;
     border-radius: 0.4rem;
-
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -13,13 +14,17 @@
         padding-right: 2.8rem;
     }
 
-
-    &--accent {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    &--padding {
         padding-left: 3.2rem;
         padding-right: 3.2rem;
+    }
 
+    &--padding5 {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    &--accent {
         box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
         background: $font-accent-color;
 
@@ -34,6 +39,12 @@
         &:focus {
             background: $font-accent-color-dark;
         }
+    }
+
+    &[type="submit"] {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     &--light {
@@ -75,3 +86,4 @@
     width: 2.4rem;
     height: 2.4rem;
 }
+

@@ -1,15 +1,16 @@
 // default
+@import "./components/visually-hidden";
 @import "./utils/variables";
 @import "./utils/common";
 @import "./components/main/buttons";
 
-@import "./components/visually-hidden";
 
 @import "./components/logo";
 
 @import "./components/header";
 
 @import "./components/main/backdrop";
+@import "./components/main/form";
 @import "./components/main/section";
 @import "./components/main/peculiarities";
 @import "./components/main/our-works";

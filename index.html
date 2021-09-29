@@ -54,8 +54,7 @@
     <!-- Header end -->
 
     <!-- Form on backdrop -->
-    <!-- <div class="backdrop-container is-hidden" data-modal> -->
-    <div class="backdrop-container" data-modal>
+    <div class="backdrop-container is-hidden" data-modal>
       <div class="overlay">
 
         <button class="overlay__button" type="button" data-modal-close>
@@ -70,13 +69,14 @@
           <form class="form">
 
             <!-- name input -->
-            <div class="form-input">
+            <div class="form-input form-input--mb1">
               <label class="form-input__label" for="user-name">
 
-                <span class="form-input__label-text">Имя</span>
+                <span class="form-input__label--text">Имя</span>
                 <input class="form-input__inner" type="text" name="user-name" id="user-name" autocomplete="name" />
+
                 <span class="form-input__icon">
-                  <svg class="icon">
+                  <svg class="icon icon--user">
                     <use href="./images/icons.svg#icon-user"></use>
                   </svg>
                 </span>
@@ -85,13 +85,13 @@
             </div>
 
             <!-- tel input -->
-            <div class="form-input">
+            <div class="form-input form-input--mb1">
               <label class="form-input__label" for="user-tel">
 
-                <span class="form-input__label-text">Телефон</span>
+                <span class="form-input__label--text">Телефон</span>
                 <input class="form-input__inner" type="tel" name="user-tel" id="user-tel" autocomplete="tel" />
                 <span class="form-input__icon">
-                  <svg class="icon">
+                  <svg class="icon icon--phone">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </span>
@@ -100,13 +100,13 @@
             </div>
 
             <!-- email input -->
-            <div class="form-input">
+            <div class="form-input form-input--mb1">
               <label class="form-input__label" for="user-email">
 
-                <span class="form-input__label-text">Почта</span>
+                <span class="form-input__label--text">Почта</span>
                 <input class="form-input__inner" type="email" name="user-email" id="user-email" autocomplete="email" />
                 <span class="form-input__icon">
-                  <svg class="icon">
+                  <svg class="icon icon--envelope">
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
                 </span>
@@ -115,31 +115,31 @@
             </div>
 
             <!-- comment input -->
-            <div class="form-input">
+            <div class="form-input form-input--mb2">
               <label class="form-input__label" for="user-comment">
-                <span class="form-input__label-text">Комментарий</span>
+                <span class="form-input__label--text">Комментарий</span>
                 <textarea class="form-input__textarea" name="user-comment" id="user-comment" rows="7" placeholder="Введите текст"></textarea>
               </label>
             </div>
 
             <!-- checkbox input -->
-            <div class="form-input">
-              <label class="form-input__label" for="user-aggrement">
-                <input class="form-input__inner-checkbox" type="checkbox" name="user-aggregant" id="user-aggrement" />
+            <div class="form-input form-input--mb3">
+              <label class="form-input__label form-input__label--checkbox" for="user-aggrement">
+                <input class="checkbox checkbox-hidden" type="checkbox" name="user-aggregant" id="user-aggrement" />
 
-                <span class="form-input__icon">
+                <span class="form-input__icon form-input__icon--checkbox">
                   <svg class="icon">
                     <use href="./images/icons.svg#icon-checked"></use>
                   </svg>
                 </span>
 
-                <span class="form-input__label-text">Соглашаюсь с рассылкой и принимаю</span>
+                <span class="form-input__label--checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
                 <a href="#" class="label-link">Условия договора</a>
 
               </label>
             </div>
 
-            <button type="submit" class="button button--padding">Отправить</button>
+            <button type="submit" class="button button--accent button--padding5">Отправить</button>
 
           </form>
 
@@ -641,9 +641,9 @@
 
           <form name="mail-form" class="mail-form">
 
-            <label class="form-input__label" for="user-email">
-              <span class="form-input__label-text">Подпишитесь на рассылку</span>
-              <input class="form-input__inner" type="email" name="user-email" id="user-email" placeholder="E-mail" />
+            <label class="form-input__label--footer" for="user-email">
+              <span class="form-input__label-text form-input__label--text-footer">Подпишитесь на рассылку</span>
+              <input class="form-input__inner form-input__inner--footer" type="email" name="user-email" id="user-email" placeholder="E-mail" />
             </label>
 
             <button class="button button--accent button--icon-padding" type="submit">
