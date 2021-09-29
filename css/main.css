@@ -48,7 +48,7 @@ img {
   color: inherit;
 }
 
-.button {
+.button, .overlay__button {
   display: inline-block;
   cursor: pointer;
   border: none;
@@ -352,6 +352,88 @@ img {
   fill: #757575;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 52.8rem;
+  height: 58.1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  -webkit-box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.14), 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.14), 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+}
+
+.overlay__button {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__button .icon__close {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__button:hover, .overlay__button:focus {
+  background: #f1fdff;
+  border: 1px solid #2196f3;
+}
+
+.overlay__button:hover .icon__close, .overlay__button:focus .icon__close {
+  fill: #2196f3;
+}
+
+.form-card {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-card__title {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212121;
+  text-align: center;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
 }
 
 .page-section {
